@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.footer {
+    &__container {
+        padding-bottom: 15vh;
+        background-color: lighten(variaveis.$corDeFundo, 2%);
+        display: flex;
+        margin-left: 45vw;
+        flex-direction: column;
+        width: 55%;
+        padding: 5vw;
+        padding-bottom: 3vw;
+        font-weight: bold;
+
+        @media (max-width: 768px) {
+            margin-left: 5vw;
+            width: 90%;
+            align-items: center;
+        }
+
+        &__poem {
+            padding-bottom: 3vh;
+            p {
+                padding-bottom: 3px;
+                color: darken(variaveis.$corDoTexto, 25%);
+            }
+        }
+    }
+
+    &__creator {
+        margin-top: 15vh;
+        padding: 0 5vw 0;
+        text-align: center;
+    }
+}
